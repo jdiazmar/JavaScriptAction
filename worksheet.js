@@ -56,16 +56,22 @@
 //     }
 
 // 4.Loops
-
+// For Loops #1
 // const n = 7
-
 // for(let i = 1; i <= n; i++){
 //     console.log("JavaScript is Cool!");
 // }
 
+// For Loops #2
 // for(let i = 0; i < 11; i++){
 //     console.log(i)
 // }
+
+// For Loops #3
+let helloAndGoodbye = ['hello', 'goodbye', 'hello', 'goodbye', 'hello', 'goodbye', 'hello', 'goodbye', 'hello', 'goodbye']
+for(let i = 0; i<helloAndGoodbye.length; i++){
+    console.log(helloAndGoodbye[i])
+} 
 
 
 
