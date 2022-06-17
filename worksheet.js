@@ -119,17 +119,27 @@
 let magicNumber = 50;
 let guess = 0;
 let userInput = (prompt("Guess the Magic Number!"));
+const x = magicNumber;
 
 
 while(userInput){
     if (userInput < magicNumber){
         console.log('Too Low!')
+        console.log(userInput)
     }else if(userInput > magicNumber){
         console.log('Too High!')
-    }else if(_.inRange(userInput, 40, 60)){
+        console.log(userInput)
+    }else if(userInput === 40){
         console.log('Getting Warmer!')
+        console.log(userInput)
+    }else if(userInput === 60){
+        console.log('Getting Warmer!')
+        console.log(userInput)
+    }else if(userInput === magicNumber){
+        console.log(`Congratulations! You Guessed Correctly! The Magic Number was ${magicNumber}!`)
     }else{
-        console.log('Congratulations! You Guessed Correctly!')
+        console.log('Try Again!')
+        console.log(userInput)
     }
 }
 
